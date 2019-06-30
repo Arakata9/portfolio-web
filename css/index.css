@@ -151,50 +151,12 @@ body{
 }
 
 .skillk{
-
   float:none;
   font-family: 'Economica', sans-serif;
   font-size: 3vw;
   font-weight:600;
   color: #333;
   transition: 500ms;
-}
-
-.look{
-  left:5vw;
-  float:none;
-  font-family: 'Economica', sans-serif;
-  font-size: 2vw;
-  font-weight:600;
-  color: #333;
-  transition: 500ms;
-}
-
-.black{
-    position:absolute;
-    right: 0vw;
-    width: 7vw;
-    height: 90vh;
-    background: #333;
-    z-index:-999;
-    transition: 600ms;
-}
-
-.blacktext{
-  position:absolute;
-  top:20vw;
-  right:22vw;
-  font-family: 'Economica', sans-serif;
-  font-size: 2.5vw;
-  color:#fff;
-  opacity: 0.5;
-  transition: 200ms;
-  z-index: 10;
-}
-
-.blacktext:hover{
-  opacity: 0;
-  transition: 200ms;
 }
 
 
@@ -223,8 +185,9 @@ body{
   float:left;
   text-align: center;
   margin-left:13vw;
-  margin-top: 8vh;
+  margin-top: 6vh;
   width:18vw;
+  z-index: 3;
   transition: 500ms;
 }
 
@@ -232,8 +195,10 @@ body{
   float:left;
   text-align: center;
   margin-left:7vw;
-  margin-top: 8vh;
+  margin-top: 6vh;
   width:18vw;
+  height:36vh;
+  z-index: 3;
   transition: 500ms;
 }
 
@@ -258,12 +223,95 @@ body{
   color: #777;
 }
 
-/*種類////////////////////////////////////////*/
+/*blackarea////////////////////////////////////////*/
+.look{
+  left:5vw;
+  float:none;
+  font-family: 'Economica', sans-serif;
+  font-size: 2vw;
+  font-weight:600;
+  color: #333;
+  transition: 500ms;
+}
 
-.illustarea{
+.black{
+    position:absolute;
+    right: 0vw;
+    width: 7vw;
+    height: 85vh;
+    background: #333;
+    z-index:-999;
+    transition: 600ms;
+}
+
+.blacktext{
+  position:absolute;
+  top:10vw;
+  right:22vw;
+  font-family: 'Economica', sans-serif;
+  font-size: 2.5vw;
+  color:#fff;
+  opacity: 0.5;
+  transition: 200ms;
+  z-index: 10;
+}
+
+.blacktext:hover{
+  opacity: 0;
+  transition: 200ms;
+}
+
+
+.gamearea {
+  position:relative;
   opacity: 0;
   transform: translateY(30px);
-  transition: 200ms;
+  transition: 100ms;
+}
+
+.game:hover+.gamearea{
+  opacity: 1;
+  transform: translateY(0);
+  transition:200ms;
+  transition-delay:300ms;
+}
+
+
+
+.layoutarea {
+  position:relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 100ms;
+}
+
+.layout:hover+.layoutarea{
+  opacity: 1;
+  transform: translateY(0);
+  transition:200ms;
+  transition-delay:300ms;
+}
+
+.logoarea{
+  position:relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 100ms;
+}
+
+.logo:hover+.logoarea{
+  opacity: 1;
+  transform: translateY(0);
+  transition:200ms;
+  transition-delay:300ms;
+}
+
+
+.illustarea{
+  position:relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 100ms;
 }
 
 .illust:hover+.illustarea{
@@ -274,32 +322,36 @@ body{
 }
 
 
-.illustleft{
+.blackleft{
+  position:absolute;
   font-family: 'Economica', sans-serif;
-  font-size: 5vw;
+  font-size: 8vw;
   color:#333;
   background:#fff;
-  margin-left: 2vw;
+  float:right;
+  padding: 2vh 0;
+  right:20.8vw;
+  top:-42vh;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 
-.illustright{
+.blackright{
   position:absolute;
   font-family: 'Economica', sans-serif;
   font-size: 1vw;
   color:#fff;
-  right:5vw;
-  top:-50vh;
+  right:4vw;
+  top:-42vh;
   width: 15vw;
 }
 
-.illust1{
+.black1{
   top:2vh;
   left:2vw;
 }
 
-.illust1 img{
+.black1 img{
   width:16vw;
 }
 
