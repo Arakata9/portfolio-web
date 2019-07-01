@@ -112,14 +112,14 @@ body{
 /*about////////////////////////////////////////////////////////////////*/
 
 .about{
-  height:120vh;
+  height:100vh;
   background-color: #eee;
 }
 
 .kao img{
   margin-left:12vw;
-  margin-top: 5vh;
-  width:28vw;
+  margin-top: 2vh;
+  width:26vw;
 }
 
 .name {
@@ -127,7 +127,7 @@ body{
   font-family: 'Rokkitt', sans-serif;
   font-size: 7vw;
   margin-left:10vw;
-  margin-top: 5vh;
+  margin-top: 2vh;
   color:#333;
   background: #ec3;
 }
@@ -156,26 +156,6 @@ body{
   font-size: 3vw;
   font-weight:600;
   color: #333;
-  transition: 500ms;
-}
-
-
-.skill:hover>.black{
-  width: 30vw;
-  transition: 600ms;
-}
-
-.skill:hover>.look{
-  left:-5vw;
-  transition: 500ms;
-}
-
-.skill:hover>.skillbox1{
-  margin-left:7vw;
-  transition: 500ms;
-}
-.skill:hover>.skillbox2{
-  margin-left:2vw;
   transition: 500ms;
 }
 
@@ -225,7 +205,9 @@ body{
 
 /*blackarea////////////////////////////////////////*/
 .look{
-  left:5vw;
+  position:absolute;
+  top:31vh;
+  left:85vw;
   float:none;
   font-family: 'Economica', sans-serif;
   font-size: 2vw;
@@ -236,7 +218,8 @@ body{
 
 .black{
     position:absolute;
-    right: 0vw;
+    right:0vh;
+    top:37vh;
     width: 7vw;
     height: 85vh;
     background: #333;
@@ -260,6 +243,56 @@ body{
   opacity: 0;
   transition: 200ms;
 }
+
+.skill:hover>.black{
+  width: 30vw;
+  transition: 600ms;
+}
+
+.skill:hover>.look{
+  left:65vw;
+  transition: 500ms;
+}
+
+.skill:hover>.skillbox1{
+  margin-left:7vw;
+  transition: 500ms;
+}
+.skill:hover>.skillbox2{
+  margin-left:2vw;
+  transition: 500ms;
+}
+
+
+.webarea {
+  position:relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 100ms;
+}
+
+.web:hover+.webarea{
+  opacity: 1;
+  transform: translateY(0);
+  transition:200ms;
+  transition-delay:300ms;
+}
+
+
+  .apparea {
+    position:relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 100ms;
+  }
+
+  .app:hover+.apparea{
+    opacity: 1;
+    transform: translateY(0);
+    transition:200ms;
+    transition-delay:300ms;
+  }
+
 
 
 .gamearea {
@@ -331,7 +364,7 @@ body{
   float:right;
   padding: 2vh 0;
   right:20.8vw;
-  top:-42vh;
+  top:-50vh;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
@@ -342,7 +375,31 @@ body{
   font-size: 1vw;
   color:#fff;
   right:4vw;
-  top:-42vh;
+  top:-50vh;
+  width: 15vw;
+}
+
+.blackleft2{
+  position:absolute;
+  font-family: 'Economica', sans-serif;
+  font-size: 8vw;
+  color:#333;
+  background:#fff;
+  float:right;
+  padding: 2vh 0;
+  right:20.8vw;
+  top:3vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.blackright2{
+  position:absolute;
+  font-family: 'Economica', sans-serif;
+  font-size: 1vw;
+  color:#fff;
+  right:4vw;
+  top:3vh;
   width: 15vw;
 }
 
@@ -355,14 +412,25 @@ body{
   width:16vw;
 }
 
+.black2{
+  float:right;
+  position:absolute;
+  top:52vh;
+  left:-11vw;
+}
+
+.black2 img{
+  padding-left: 1vw;
+    width:12vw;
+}
 
 
 
 
 /*Mail////////////////////////////////////*/
 .Mail{
- position: absolute;
-  margin-top:50vh;
+ position: relative;
+ top:130vh;
   width: 100vw;
   height:80vh;
   z-index: -1;
